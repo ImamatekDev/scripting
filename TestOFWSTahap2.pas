@@ -7,6 +7,7 @@ type
   TTestOFInjector = class(TInjector)
   private
     procedure GenerateScriptShowMessage;
+    procedure GenerateScriptShowMessage2(name: string; DefName: string = 'test');
   protected
     procedure set_scripting_parameterize; override;
   public
@@ -28,6 +29,16 @@ begin
   Script.Add := 'end.';
 end;
 
+procedure TTestOFInjector.GenerateScriptShowMessage2(name: string; DefName: string = 'test');
+begin
+  ClearScript;
+
+  Script.Add := EmptyStr;
+  Script.Add := 'begin';
+  Script.Add := '  ShowMessage(''' + name + ' ' + DefName + ''');';
+  Script.Add := 'end.';
+end;
+
 procedure TTestOFInjector.GenerateScript;
 begin
   inherited;
@@ -35,6 +46,11 @@ begin
   GenerateScriptShowMessage;
   InjectToDB( fnSalesOrder );
   InjectToDB(fnARInvoice);
+
+  GenerateScriptShowMessage2('SCY');
+  InjectToDB( fnDeliveryOrder );
+  InjectToDB(fnARPayment);
+
 end;
 
 procedure TTestOFInjector . set_scripting_parameterize;
