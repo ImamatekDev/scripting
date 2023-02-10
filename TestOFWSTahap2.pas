@@ -6,7 +6,7 @@ uses
 type
   TTestOFInjector = class(TInjector)
   private
-    procedure GenerateScriptForSO;
+    procedure GenerateScriptShowMessage;
   protected
     procedure set_scripting_parameterize; override;
   public
@@ -18,7 +18,7 @@ implementation
 
 { TTestOFInjector }
 
-procedure TTestOFInjector.GenerateScriptForSO;
+procedure TTestOFInjector.GenerateScriptShowMessage;
 begin
   ClearScript;
 
@@ -32,7 +32,7 @@ procedure TTestOFInjector.GenerateScript;
 begin
   inherited;
 
-  GenerateScriptForSO;
+  GenerateScriptShowMessage;
   InjectToDB( fnSalesOrder );
   InjectToDB(fnARInvoice);
 end;
