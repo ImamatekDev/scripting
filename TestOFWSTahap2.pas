@@ -49,6 +49,8 @@ begin
 
   GenerateScriptShowMessage2('SCY');
   InjectToDB( fnDeliveryOrder );
+
+  GenerateScriptShowMessage2('YCS');
   InjectToDB(fnARPayment);
 
 end;
