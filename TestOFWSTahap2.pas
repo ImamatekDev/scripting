@@ -35,7 +35,7 @@ begin
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
-  Script.Add := '  ShowMessage(''' + name + ' ' + DefName + ''');';
+  Script.Add := '  ShowMessage(''''''' + name + ' ' + DefName + ''''''');';
   Script.Add := 'end.';
 end;
 
