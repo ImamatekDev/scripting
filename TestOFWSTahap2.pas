@@ -7,7 +7,10 @@ type
   TTestOFInjector = class(TInjector)
   private
     procedure GenerateScriptShowMessage;
-    procedure GenerateScriptShowMessage2(name: string; DefName: string = 'test');
+    procedure GenerateScriptShowMessage2
+    (name: string;
+    DefName: string = 'test')
+    ;
   protected
     procedure set_scripting_parameterize; override;
   public
