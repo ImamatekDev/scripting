@@ -39,7 +39,7 @@ begin
   Script.Add := EmptyStr;
   Script.Add := 'begin';
   Script.Add := '  ShowMessage(''''''' + name + ''''' SCY ''''' + DefName + ''''''');';
-  Script.Add := Format('  ShowMessage(''''''%s'''' SCY ''''' + DefName + ''''''');', [name]);
+  Script.Add := Format('  ShowMessage(''''''%s'''' %s%d ''''' + DefName + ''''''');', [name, 'V', 1]);
   Script.Add := 'end.';
 end;
 
