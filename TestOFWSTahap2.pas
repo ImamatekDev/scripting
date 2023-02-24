@@ -35,12 +35,10 @@ end;
 procedure TTestOFInjector.GenerateScriptShowMessage;
 begin
   ClearScript;
-  RunOtherProcedure('ExtFn');
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
   Script.Add := '  ShowMessage(''test'');';
-  Script.Add := '  RunOtherProcedure(''IntFn'');';
   Script.Add := 'end.';
 end;
 
