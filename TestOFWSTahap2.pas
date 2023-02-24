@@ -29,7 +29,7 @@ begin
   Script.Add := 'procedure RunOtherProcedure(fnName: string);';
   Script.Add := 'begin';
   Script.Add := Format('  ShowMessage(''Run %s and '' + fnName);', [fnName]);
-  Script.Add := 'end.';
+  Script.Add := 'end;';
 end;
 
 procedure TTestOFInjector.GenerateScriptShowMessage;
