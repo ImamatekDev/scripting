@@ -40,8 +40,15 @@ procedure TTestOFInjector.RunSubProcedure;
 begin
   Script.Add := EmptyStr;
   Script.Add := 'function GetSubProcedure: string;';
+  Script.Add := EmptyStr;
+  Script.Add := '  function GetFirstVersion: Integer;';
+  Script.Add := '  begin';
+  Script.Add := '    Result := 1;';
+  Script.Add := '  end;';
+
+  Script.Add := EmptyStr;
   Script.Add := 'begin';
-  Script.Add := '  Result := ''SubProcedure'';';
+  Script.Add := '  Result := ''SubProcedure'' + IntToStr(GetFirstVersion);';
   Script.Add := 'end;';
 end;
 
