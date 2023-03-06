@@ -6,6 +6,7 @@ uses
 type
   TTestOFInjector = class(TInjector)
   private
+    procedure RunSubProcedure;
     procedure RunOtherProcedure(fnName: string);
     procedure GenerateScriptShowMessage;
     procedure GenerateScriptShowMessage2
@@ -25,10 +26,22 @@ implementation
 
 procedure TTestOFInjector.RunOtherProcedure;
 begin
+  RunSubProcedure;
+
   Script.Add := EmptyStr;
   Script.Add := 'procedure RunOtherProcedure(fnName: string);';
   Script.Add := 'begin';
   Script.Add := Format('  ShowMessage(''Run %s and '' + fnName);', [fnName]);
+  Script.Add := '  ShowMessage(Format(''%s'', [GetSubProcedure]) );';
+  Script.Add := 'end;';
+end;
+
+procedure TTestOFInjector.RunSubProcedure;
+begin
+  Script.Add := EmptyStr;
+  Script.Add := 'function GetSubProcedure: string;';
+  Script.Add := 'begin';
+  Script.Add := '  Result := ''SubProcedure'';';
   Script.Add := 'end;';
 end;
 
