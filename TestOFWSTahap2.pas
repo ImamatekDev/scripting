@@ -72,6 +72,8 @@ begin
   Script.Add := 'begin';
   Script.Add := '  ShowMessage(''''''' + name + ''''' SCY ''''' + DefName + ''''''');';
   Script.Add := Format('  ShowMessage(''''''%s'''' %s%d ''''' + DefName + ''''''');', [name, 'V', 1]);
+  // Test Comment
+  Script.Add := '//  ShowMessage(''Test Comment'');';
   Script.Add := 'end.';
 end;
 
