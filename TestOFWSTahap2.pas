@@ -70,10 +70,21 @@ begin
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
-  Script.Add := '  ShowMessage(''''''' + name + ''''' SCY ''''' + DefName + ''''''');';
+  // Test Row Comment
+  Script.Add := '//  ShowMessage(''Test Script Comment'');';
+  Script.Add := '  ShowMessage(''''''' + name + ''''' SCY ''''' + DefName + ''''''');';  //Test Comment After Script
   Script.Add := Format('  ShowMessage(''''''%s'''' %s%d ''''' + DefName + ''''''');', [name, 'V', 1]);
-  // Test Comment
-  Script.Add := '//  ShowMessage(''Test Comment'');';
+
+  Script.Add := '  ShowMessage(Format(''Test Curly %s Comment'', [{''2''} ''1'']) );';
+  Script.Add := {Curly Comment}'  ShowMessage(''Comment'');';
+  Script.Add := '{';
+  Script.Add := '  ShowMessage(''Comment Row 1 Curly Comment Script'');';
+  Script.Add := '  ShowMessage(''Comment Row 2 Curly Comment Script'');';
+  Script.Add := '}';
+{
+  Script.Add := '  ShowMessage(''Comment Row 1 Curly Comment Function'');';
+  Script.Add := '  ShowMessage(''Comment Row 2 Curly Comment Function'');';
+}
   Script.Add := 'end.';
 end;
 
