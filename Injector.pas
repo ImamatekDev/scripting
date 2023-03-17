@@ -478,7 +478,8 @@ end;
 
 procedure TInjector.add_procedure_runsql;
 begin
-  if not Script.IsProcedureExist('procedure RunSQL( qryObj:TjbSQL; sql:string; Execute:Boolean=true );') then begin
+//  if not Script.IsProcedureExist('procedure RunSQL( qryObj:TjbSQL; sql:string; Execute:Boolean=true );') then begin
+    Script.Add := 'procedure RunSQL( qryObj:TjbSQL; sql:string; Execute:Boolean=true );';
     Script.Add := 'begin';
     Script.Add := '  qryObj.close;';
     Script.Add := '  qryObj.sql.text := sql;';
@@ -487,7 +488,7 @@ begin
     Script.Add := '  end;';
     Script.Add := 'end;';
     Script.Add := EmptyStr;
-  end;
+//  end;
 end;
 
 procedure TInjector.AddFunction_CreateSQL;
@@ -2792,7 +2793,8 @@ procedure TInjector.LoadCombo;
 begin
   add_procedure_runsql;
 
-  if not Script.IsProcedureExist('procedure LoadCombo (sql : TjbSQL; Combo : TComboBox; sqlScript : String; WithAll : Boolean); ') then begin
+//  if not Script.IsProcedureExist('procedure LoadCombo (sql : TjbSQL; Combo : TComboBox; sqlScript : String; WithAll : Boolean); ') then begin
+    Script.Add := 'procedure LoadCombo (sql : TjbSQL; Combo : TComboBox; sqlScript : String; WithAll : Boolean);';
     Script.Add := '  function GetFirstItem:String; ';
     Script.Add := '  begin';
     Script.Add := '    if WithAll then result := ''<ALL>'' else result := ''<None>''; ';
@@ -2807,7 +2809,7 @@ begin
     Script.Add := '  end; ';
     Script.Add := '  combo.ItemIndex := 0; ';
     Script.Add := 'end; ';
-  end;
+//  end;
 end;
 
 procedure TInjector.LoopInDataset(LoopName, procName:String);
