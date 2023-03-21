@@ -55,7 +55,6 @@ end;
 procedure TTestOFInjector.GenerateScriptShowMessage;
 begin
   ClearScript;
-  LoadCombo;
   RunOtherProcedure('ExtFn');
 
   Script.Add := EmptyStr;
@@ -77,7 +76,9 @@ begin
   Script.Add := Format('  ShowMessage(''''''%s'''' %s%d ''''' + DefName + ''''''');', [name, 'V', 1]);
 
   Script.Add := '  ShowMessage(Format(''Test Curly %s Comment'', [{''2''} ''1'']) );';
-  Script.Add := {Curly Comment}'  ShowMessage(''Comment'');';
+  Script.Add := '  ShowMessage(Format(''Test Curly %s Comment'', [(*''2''*) ''1'']) );';
+  Script.Add := {Curly Comment}'  ShowMessage(''Curly Comment'');';
+  Script.Add := (*ParenthesesStar Comment*)'  ShowMessage(''ParenthesesStar'');';
   Script.Add := '{';
   Script.Add := '  ShowMessage(''Comment Row 1 Curly Comment Script'');';
   Script.Add := '  ShowMessage(''Comment Row 2 Curly Comment Script'');';
@@ -86,6 +87,14 @@ begin
   Script.Add := '  ShowMessage(''Comment Row 1 Curly Comment Function'');';
   Script.Add := '  ShowMessage(''Comment Row 2 Curly Comment Function'');';
 }
+  Script.Add := '(*';
+  Script.Add := '  ShowMessage(''Comment Row 1 ParenthesesStar Comment Script'');';
+  Script.Add := '  ShowMessage(''Comment Row 2 ParenthesesStar Comment Script'');';
+  Script.Add := '*)';
+(*
+  Script.Add := '  ShowMessage(''Comment Row 1 ParenthesesStar Comment Function'');';
+  Script.Add := '  ShowMessage(''Comment Row 2 ParenthesesStar Comment Function'');';
+*)
   Script.Add := 'end.';
 end;
 
