@@ -56,6 +56,7 @@ procedure TTestOFInjector.GenerateScriptShowMessage;
 begin
   ClearScript;
   RunOtherProcedure('ExtFn');
+  LoadCombo;
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
