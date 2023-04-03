@@ -7,7 +7,7 @@ get = function() {
     GenerateScriptForSO: `function GenerateScriptForSO() {
 return addNewLine([
 
-"#language JScript"
+"#language JScript",
 "// Test Scripting dengan JScript",
 "// Sumber : https://www.fast-report.com/public_download/fs_en.pdf",
 "/* Akhiran kode boleh ada ; ataupun tidak*/",
