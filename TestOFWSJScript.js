@@ -1,6 +1,6 @@
 get = function() {
   return {
-    name: 'Test Js Script',
+    name: 'Test JScript',
     GenerateScript: `function GenerateScript() {
       injectToDb(getFormName('fnSalesOrder'), GenerateScriptForSO());
     };`,
@@ -8,11 +8,13 @@ get = function() {
 return addNewLine([
 
 "#language JScript",
-"// Test Scripting dengan JScript",
+"// Test Scripting dengan JScript, wajib menggunakan #language JScript agar mode script berubah dari PascalScript ke JScript",
 "// Sumber : https://www.fast-report.com/public_download/fs_en.pdf",
 "/* Akhiran kode boleh ada ; ataupun tidak*/",
+'// Untuk string di JScript, wajib gunakan "(double quote)',
+
 "",
-"// Modif dari prosedur yang ada",
+"// Modif dari prosedur yang ada. Saat ini belum ambil dari Parent Class (TInjector)",
 "function createSql(trans) {",
 "var",
 "  sql",
