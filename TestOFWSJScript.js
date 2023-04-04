@@ -71,7 +71,7 @@ return addNewLine([
 'Master.on_before_save_array = "showData"',
 'showMessage("Loop terakhir = " + inttostr (loopData() ) )',
 "showQueryData()"
-  
+
 ])};`,
   }
 }
