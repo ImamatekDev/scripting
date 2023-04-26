@@ -1,62 +1,48 @@
-get = function() {
-  return 
-{
-    name: 'TEST',
-    GenerateScript: function() {
-      return `
-injectToDb(getFormName('fnSalesOrder'), GenerateScriptShowMessage());
-injectToDb(getFormName('fnARInvoice'), GenerateScriptShowMessage());
-injectToDb(getFormName('fnDeliveryOrder'), GenerateScriptShowMessage2('SCY'));
-injectToDb(getFormName('fnARPayment'), GenerateScriptShowMessage2('YCS'));`
-    },
-    GenerateScriptShowMessage: function() {
-      RunOtherProcedure("ExtFn")
-        return `
-begin
-  ShowMessage('test');
-  RunOtherProcedure('IntFn');
-end.`
-},
-    GenerateScriptShowMessage2: function(name, DefName = 'test') {
-      return `
-begin
-//  ShowMessage('Test Script Comment');
-  ShowMessage('''" + name + "'' SCY ''" + DefName + "''');
-  ShowMessage('''" + name + "'' " + "V" + "" + 1 + " ''" + DefName + "''');
-  ShowMessage(Format('Test Curly %s Comment', [{'2'} '1']) );
-  ShowMessage(Format('Test Curly %s Comment', [(*'2'*) '1']) );
-  ShowMessage('Curly Comment');
-  ShowMessage('ParenthesesStar');
-{
-  ShowMessage('Comment Row 1 Curly Comment Script');
-  ShowMessage('Comment Row 2 Curly Comment Script');
-}
-(*
-  ShowMessage('Comment Row 1 ParenthesesStar Comment Script');
-  ShowMessage('Comment Row 2 ParenthesesStar Comment Script');
-*)
-end.`
-},
-    RunOtherProcedure: function(fnName) {
-      RunSubProcedure()
-      return `
-  procedure RunOtherProcedure(fnName: string);
-  begin
-    ShowMessage('Run " + fnName + " and ' + fnName);
-    ShowMessage(Format('%s', [GetSubProcedure]) );
-  end;`
-},
-    RunSubProcedure: function() {
-      return `
-  function GetSubProcedure: string;
-  
-    function GetFirstVersion: Integer;
-    begin
-      Result := 1;
-    end;
-  
-  begin
-    Result := 'SubProcedure' + IntToStr(GetFirstVersion);
-  end;`
-}
+get = function(){
+  return {
+   name: 'Test JScript',
+   GenerateScript: ()=>{
+     injectToDb(getFormName('fnSalesOrder'), generateScriptForSO());           
+   },
+   generateScriptForSO:()=>{
+     return `
+       #language JScript
+       function createSql(trans){
+         var sql
+         sql = TjbSQL.Create(nil)
+         sql.database = DB
+         sql.transaction = trans
+         return sql
+       }
+       function showData(){
+         showMessage(Master.SONO.AsString + 'SCY')
+       }
+       function showQueryData(){
+         var dataSQL
+         dataSQL = createSql(tx)
+         try {
+           runSql(dataSql, 'Select first 2 SONO from SO', true)
+           while (!dataSql.eof) {
+             showMessage('No. SO = ' + dataSql.fieldByName('SONO'))
+             dataSql.next
+           }
+         } finally {
+           dataSQL.free
+         }
+       }
+       function loopData(){
+         var idxCounter
+         const MAX_COUNTER = 2
+         for (idxCounter = 0; idxCounter <= MAX_COUNTER; idxCounter++){
+           if (idxCounter==2){
+             return idxCounter
+           }
+         }
+       }
+       Master.on_before_save_array = 'showData'
+       showMessage('Loop terakhir = ' + inttostr( loopData() ))
+       showQueryData()
+     ` 
+   }
+ }
 }
