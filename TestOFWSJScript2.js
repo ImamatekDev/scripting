@@ -2,9 +2,7 @@ get = function(){
   return {
    name: 'Test JScript',
    GenerateScript: function() {
-     return `
        injectToDb(getFormName('fnSalesOrder'), generateScriptForSO()); 
-     `
    },
    generateScriptForSO: function() {
      return `
