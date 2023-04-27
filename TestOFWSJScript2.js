@@ -1,6 +1,6 @@
 get = function(){
   return {
-   name: 'Test JScript',
+   name: 'Test JScript 2',
    GenerateScript: function() {
        injectToDb(getFormName('fnSalesOrder'), generateScriptForSO()); 
    },
@@ -15,15 +15,15 @@ get = function(){
          return sql
        }
        function showData(){
-         showMessage(Master.SONO.AsString + 'SCY')
+         showMessage(Master.SONO.AsString + "SCY")
        }
        function showQueryData(){
          var dataSQL
          dataSQL = createSql(tx)
          try {
-           runSql(dataSql, 'Select first 2 SONO from SO', true)
+           runSql(dataSql, "Select first 2 SONO from SO", true)
            while (!dataSql.eof) {
-             showMessage('No. SO = ' + dataSql.fieldByName('SONO'))
+             showMessage("No. SO = " + dataSql.fieldByName("SONO"))
              dataSql.next
            }
          } finally {
@@ -39,8 +39,8 @@ get = function(){
            }
          }
        }
-       Master.on_before_save_array = 'showData'
-       showMessage('Loop terakhir = ' + inttostr( loopData() ))
+       Master.on_before_save_array = "showData"
+       showMessage("Loop terakhir = " + inttostr( loopData() ))
        showQueryData()
      ` 
    }
