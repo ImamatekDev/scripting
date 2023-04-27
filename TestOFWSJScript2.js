@@ -1,10 +1,10 @@
-get = function(){
+get = ()=>{
   return {
     name: 'Test JScript 2',
     GenerateScript: ()=>{
       injectToDb(getFormName('fnSalesOrder'), generateScriptForSO()); 
     },
-    generateScriptForSO: function() {
+    generateScriptForSO: ()=>{
       return `
         #language JScript
         function createSql(trans){
