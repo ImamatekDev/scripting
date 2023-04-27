@@ -25,7 +25,7 @@ get = ()=>{
         }
         
         function showData(){
-          showMessage(Master.SONO.AsString + "SCY")
+          showMessage(Master.SONO.AsString + 'SCY')
         }
         
         function showQueryData(){
