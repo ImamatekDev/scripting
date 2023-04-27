@@ -8,7 +8,7 @@ get = function(){
       return `
         #language JScript
         function createSql(trans){
-          var sql
+          let sql
           sql = TjbSQL.Create(nil)
           sql.database = DB
           sql.transaction = trans
@@ -29,7 +29,7 @@ get = function(){
         }
         
         function showQueryData(){
-          var dataSQL
+          let dataSQL
           dataSQL = createSql(tx)
           try {
             runSql(dataSql, "Select first 2 SONO from SO", true)
@@ -43,7 +43,7 @@ get = function(){
         }
         
         function loopData(){
-          var idxCounter
+          let idxCounter
           const MAX_COUNTER = 2
           for (idxCounter = 0; idxCounter <= MAX_COUNTER; idxCounter++){
             if (idxCounter==2){
