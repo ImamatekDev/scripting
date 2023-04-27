@@ -56,7 +56,9 @@ get = ()=>{
         showMessage("Loop terakhir = " + inttostr( loopData() ))
         showQueryData()
         showMessage("\"")
-        showMessage('\"')
+        showMessage('"')
+        showMessage("'")
+        showMessage('\'')
       ` 
     }
   }
