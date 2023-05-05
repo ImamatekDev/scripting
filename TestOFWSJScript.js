@@ -2,7 +2,7 @@ get = ()=>{
   return {
     name: 'Test JScript',
     GenerateScript: ()=>{
-      injectToDb(getFormName('fnSalesOrder'), generateScriptForSO());
+      injectToDb('fnSalesOrder', generateScriptForSO());
     },
     OtherJScriptFn: (inputArg)=>{
       return `
