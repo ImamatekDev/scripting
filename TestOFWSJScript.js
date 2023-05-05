@@ -35,16 +35,16 @@ get = ()=>{
         }
         
         function showData(){
-          showMessage(Master.SONO.AsString + 'SCY')
+          showMessage(Master.SONO.AsString + "SCY")
         }
         
         function showQueryData(){
           let dataSQL
           dataSQL = createSql(tx)
           try {
-            runSql(dataSql, 'Select first 2 SONO from SO', true)
+            runSql(dataSql, "Select first 2 SONO from SO", true)
             while (!dataSql.eof) {
-              showMessage('No. SO = ' + dataSql.fieldByName('SONO'))
+              showMessage("No. SO = " + dataSql.fieldByName("SONO"))
               dataSql.next
             }
           } finally {
