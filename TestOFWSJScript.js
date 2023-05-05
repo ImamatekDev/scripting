@@ -5,12 +5,12 @@ get = ()=>{
       injectToDb(getFormName('fnSalesOrder'), generateScriptForSO());
     },
     OtherJScriptFn: (inputArg)=>{
-	    return `
-		  	function runOtherJScriptFn(${inputArg}, inputJScript) {
-		    	showMessage(inputJs + " - " + inputJScript)
-		  	}
-	    `
-	  },
+			return `
+			  function runOtherJScriptFn(${inputArg}, inputJScript) {
+				  showMessage(inputJs + " - " + inputJScript)
+				}
+			`
+		},
     generateScriptForSO: ()=>{
       return `
         #language JScript
