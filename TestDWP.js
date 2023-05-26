@@ -3,7 +3,6 @@ get = ()=>{
     name: 'Testing DWP',
     GenerateScript: ()=>{
       injectToDb('fnSalesOrders', generateScriptForListSO());
-//    insert script into form, list / dataset into fina
     },
     
      OtherJScriptFn: (inputArg)=>{
@@ -16,7 +15,6 @@ get = ()=>{
     
     generateScriptForListSO: ()=>{
       return `
-      
       #language JScript
       ${OtherJScriptFn('inputJs')}
       
