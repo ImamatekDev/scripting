@@ -21,6 +21,7 @@ get = ()=>{
       ${OtherJScriptFn('inputJs')}
       
       showMessage("Just show this message to you")
+      runOtherJScriptFn("a", "b")
       ` 
     }
   }
