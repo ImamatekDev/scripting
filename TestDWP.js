@@ -6,6 +6,14 @@ get = ()=>{
 //    insert script into form, list / dataset into fina
     },
     
+     OtherJScriptFn: (inputArg)=>{
+      return `
+        function runOtherJScriptFn(${inputArg}, inputJScript) {
+          showMessage(inputJs + " - " + inputJScript)
+        }
+      `
+    },
+    
     generateScriptForListSO: ()=>{
       return `
       
