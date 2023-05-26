@@ -8,7 +8,9 @@ get = ()=>{
     
     generateScriptForListSO: ()=>{
       return `
-        showMessage("Just show this message to you")
+      
+      #language JScript
+      showMessage("Just show this message to you")
       ` 
     }
   }
