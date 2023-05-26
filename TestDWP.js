@@ -17,23 +17,6 @@ get = ()=>{
       return `
         #language JScript
         ${GlobalMessage()}
-
-        function createSql(trans){
-          let sql
-          sql = TjbSQL.Create(nil)
-          sql.database = DB
-          sql.transaction = trans
-          return sql
-        }
-      
-        function runSql(qryObj, sql, execute) {
-          qryObj.close
-          qryObj.sql.text = sql
-    
-          if (execute) {
-            qryObj.execQuery
-          }
-        }
         
         Message()
       ` 
