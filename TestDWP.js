@@ -33,10 +33,9 @@ get = ()=>{
             qryObj.execQuery
           }
         }
-        
+     
         showMessage("Just show this message to you")
-        
-       
+       `
     },
     
       generateScriptForSI: ()=>{
