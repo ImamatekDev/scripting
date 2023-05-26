@@ -34,9 +34,7 @@ get = ()=>{
           }
         }
         
-        function showData(){
-          showMessage("Just show this message to you")
-        }
+        showMessage("Just show this message to you")
       ` 
     }
   }
