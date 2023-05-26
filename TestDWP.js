@@ -17,7 +17,7 @@ get = ()=>{
       return `
         #language JScript
         function abc(){
-          result 1          
+          return 1          
         }
         
         showMessage("Just show this message to you")
