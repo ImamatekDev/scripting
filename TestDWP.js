@@ -16,7 +16,12 @@ get = ()=>{
     generateScriptForListSO: ()=>{
       return `
         #language JScript
+        function abc(){
+          result 1          
+        }
+        
         showMessage("Just show this message to you")
+        
       ` 
     },
     
