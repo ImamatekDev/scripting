@@ -1,4 +1,5 @@
 {
   "TEST": "TestOFWSTahap2.pas",
   "TEST JSCRIPT": "TestOFWSJScript.js"
+  "TESTING DWP": "TestDWP.js"
 }
