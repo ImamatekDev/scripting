@@ -16,12 +16,27 @@ get = ()=>{
         #language JScript
 
         ${OtherJScriptFn('inputJs')}
+
+        function createSql(trans){
+          let sql
+          sql = TjbSQL.Create(nil)
+          sql.database = DB
+          sql.transaction = trans
+          return sql
+        }
+      
+        function runSql(qryObj, sql, execute) {
+          qryObj.close
+          qryObj.sql.text = sql
+    
+          if (execute) {
+            qryObj.execQuery
+          }
+        }
         
         function showData(){
           showMessage("Just show this message to you")
         }
-        
-        showData()
       ` 
     }
   }
