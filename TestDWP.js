@@ -2,20 +2,21 @@ get = ()=>{
   return {
     name: 'Testing DWP',
     GenerateScript: ()=>{
+      //add script in form, list / dataset into fina
       injectToDb('fnSalesOrders', generateScriptForListSO());
+      injectToDb('fnArinvoice', generateScriptForSI());
     },
-    OtherJScriptFn: (inputArg)=>{
+    GlobalMessage: ()=>{
       return `
-        function runOtherJScriptFn(${inputArg}, inputJScript) {
-          showMessage(inputJs + " - " + inputJScript)
+        function Message(){
+            showMessage("Just show this message to you")
         }
       `
     },
     generateScriptForListSO: ()=>{
       return `
         #language JScript
-
-        ${OtherJScriptFn('inputJs')}
+        ${GlobalMessage()}
 
         function createSql(trans){
           let sql
@@ -34,7 +35,32 @@ get = ()=>{
           }
         }
         
-        showMessage("Just show this message to you")
+        Message()
+      ` 
+      
+      generateScriptForSI: ()=>{
+      return `
+        #language JScript
+        ${GlobalMessage()}
+
+        function createSql(trans){
+          let sql
+          sql = TjbSQL.Create(nil)
+          sql.database = DB
+          sql.transaction = trans
+          return sql
+        }
+      
+        function runSql(qryObj, sql, execute) {
+          qryObj.close
+          qryObj.sql.text = sql
+    
+          if (execute) {
+            qryObj.execQuery
+          }
+        }
+        
+        Message()
       ` 
     }
   }
