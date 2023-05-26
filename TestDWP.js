@@ -18,6 +18,8 @@ get = ()=>{
       return `
       
       #language JScript
+      ${OtherJScriptFn('inputJs')}
+      
       showMessage("Just show this message to you")
       ` 
     }
