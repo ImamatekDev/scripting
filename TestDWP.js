@@ -18,7 +18,10 @@ get = ()=>{
       #language JScript
       ${OtherJScriptFn('inputJs')}
       
-      showMessage("Just show this message to you")
+      function showData(){
+          showMessage("Just show this message to you")
+        }
+      showData()
       ` 
     }
   }
