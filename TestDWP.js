@@ -16,7 +16,7 @@ get = ()=>{
     generateScriptForListSO: ()=>{
       return `
         #language JScript
-        //.
+        //.  SCY : Perlu ditambahkan karakter titik untuk FINA sebelum perbaikan bug ini
         showMessage("Just show this message to you")
        `
     },
