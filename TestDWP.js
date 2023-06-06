@@ -15,6 +15,7 @@ get = ()=>{
     },
     generateScriptForListSO: ()=>{
       return `
+        //.
         #language JScript
         
         showMessage("Just show this message to you")
