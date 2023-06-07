@@ -1,5 +1,22 @@
-{
-  "TEST": "TestOFWSTahap2.pas",
-  "TEST JSCRIPT": "TestOFWSJScript.js",
-  "TESTING DWP": "TestDWP.js"
-}
+[
+  {
+    "name": "TEST",
+    "fileName": "TestOFWSTahap2.pas",
+    "className": ""
+  },
+  {
+    "name": "TEST JSCRIPT",
+    "fileName": "TestOFWSJScript.js",
+    "className": ""
+  },
+  {
+    "name": "TESTING DWP",
+    "fileName": "TestDWP.js",
+    "className": ""
+  },
+  {
+    "name": "INJECTOR",
+    "fileName": "Injector.pas",
+    "className": "TInjector"
+  }
+]
