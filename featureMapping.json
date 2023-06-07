@@ -18,5 +18,10 @@
     "name": "INJECTOR",
     "fileName": "Injector.pas",
     "className": "TInjector"
+  },
+  {
+    "name": "UNIVERSALIMPORTER",
+    "fileName": "UniversalImporterInjector.pas",
+    "className": ""
   }
 ]
