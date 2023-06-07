@@ -15,8 +15,9 @@ get = ()=>{
     },
     generateScriptForListSO: ()=>{
       return `
-        //.
+
         #language JScript
+        //.  // Tambah ini agar bisa dideteksi oleh FINA di bawah 1.9.3.190
         
         showMessage("Just show this message to you")
        `
