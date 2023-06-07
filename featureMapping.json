@@ -20,7 +20,7 @@
     "className": "TInjector"
   },
   {
-    "name": "UNIVERSALIMPORTER",
+    "name": "SKIP_UNIVERSALIMPORTER",
     "fileName": "UniversalImporterInjector.pas",
     "className": ""
   }
