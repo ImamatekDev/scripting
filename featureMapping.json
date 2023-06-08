@@ -1,5 +1,25 @@
 [
   {
+    "name": "INJECTOR",
+    "fileName": "Injector.pas",
+    "className": "TInjector"
+  },
+  {
+    "name": "SCRIPTCONST",
+    "fileName": "ScriptConst.pas",
+    "className": ""
+  },
+  {
+    "name": "UNIVERSALIMPORTER",
+    "fileName": "UniversalImporterInjector.pas",
+    "className": ""
+  },
+  {
+    "name": "REPORT MENU",
+    "fileName": "ReportMenuInjector.pas",
+    "className": ""
+  },
+  {
     "name": "TEST",
     "fileName": "TestOFWSTahap2.pas",
     "className": ""
@@ -12,21 +32,6 @@
   {
     "name": "TESTING DWP",
     "fileName": "TestDWP.js",
-    "className": ""
-  },
-  {
-    "name": "INJECTOR",
-    "fileName": "Injector.pas",
-    "className": "TInjector"
-  },
-  {
-    "name": "UNIVERSALIMPORTER",
-    "fileName": "UniversalImporterInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "REPORT MENU",
-    "fileName": "ReportMenuInjector.pas",
     "className": ""
   }
 ]
