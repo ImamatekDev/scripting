@@ -23,5 +23,10 @@
     "name": "UNIVERSALIMPORTER",
     "fileName": "UniversalImporterInjector.pas",
     "className": ""
+  },
+  {
+    "name": "REPORT MENU",
+    "fileName": "ReportMenuInjector.pas",
+    "className": ""
   }
 ]
