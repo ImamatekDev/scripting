@@ -10,6 +10,11 @@
     "className": ""
   },
   {
+    "name": "DATASETBATCHNO",
+    "fileName": "DatasetBatchNoInjector.pas",
+    "className": "TDatasetBatchNoInjector"
+  },
+  {
     "name": "UNIVERSALIMPORTER",
     "fileName": "UniversalImporterInjector.pas",
     "className": ""
