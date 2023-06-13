@@ -25,6 +25,11 @@
     "className": ""
   },
   {
+    "name": "BATCH NUMBER",
+    "fileName": "BatchNoInjector.pas",
+    "className": ""
+  },
+  {
     "name": "TEST",
     "fileName": "TestOFWSTahap2.pas",
     "className": ""
