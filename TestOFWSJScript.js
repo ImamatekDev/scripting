@@ -16,7 +16,6 @@ get = ()=>{
         #language JScript
 
         ${unitTest()}
-        ${testData()}
         ${OtherJScriptFn('inputJs')}
 
         function createSql(trans){
