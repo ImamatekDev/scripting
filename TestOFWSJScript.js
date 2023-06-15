@@ -15,6 +15,7 @@ get = ()=>{
       return `
         #language JScript
 
+        ${unitTest()}
         ${OtherJScriptFn('inputJs')}
 
         function createSql(trans){
@@ -61,12 +62,32 @@ get = ()=>{
             }
           }
         }
+
+        function doubleValue(a) {
+          return a * 2;
+        }
         
         Master.on_before_save_array = "showData"
         showMessage("Loop terakhir = " + inttostr(loopData() ) )
         showQueryData()
         runOtherJScriptFn("a", "b")
       ` 
-    }
+    },
+    unitTest: ()=>{
+      return `
+        function testValueType(description, expected, actual) {
+          if (expected != actual) {
+            RaiseException("Test " + description + " Expected: " + vartostr(expected) + " Actual: " + vartostr(actual));
+          }
+        }
+
+        function dummytest() {
+          const arg1 = 5 + 110;
+
+          testValueType("double value", "10", doubleValue(arg1));
+        }
+        dummytest()
+      `
+    },
   }
 }
