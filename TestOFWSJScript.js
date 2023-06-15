@@ -16,6 +16,7 @@ get = ()=>{
         #language JScript
 
         ${unitTest()}
+        ${testData()}
         ${OtherJScriptFn('inputJs')}
 
         function createSql(trans){
@@ -75,12 +76,6 @@ get = ()=>{
     },
     unitTest: ()=>{
       return `
-        function testData(description, expected, actual) {
-          if (expected != actual) {
-            RaiseException("Test " + description + " Expected: " + vartostr(expected) + " Actual: " + vartostr(actual));
-          }
-        }
-
         function dummytest() {
           const arg1 = 5 + 110;
 
