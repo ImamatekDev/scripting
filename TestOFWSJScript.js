@@ -75,7 +75,7 @@ get = ()=>{
     },
     unitTest: ()=>{
       return `
-        function testValueType(description, expected, actual) {
+        function testData(description, expected, actual) {
           if (expected != actual) {
             RaiseException("Test " + description + " Expected: " + vartostr(expected) + " Actual: " + vartostr(actual));
           }
@@ -84,7 +84,7 @@ get = ()=>{
         function dummytest() {
           const arg1 = 5 + 110;
 
-          testValueType("double value", "10", doubleValue(arg1));
+          testData("double value", "10", doubleValue(arg1));
         }
         dummytest()
       `
