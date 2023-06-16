@@ -3,6 +3,7 @@ get = ()=>{
     name: 'Test JScript',
     GenerateScript: ()=>{
       injectToDb('fnSalesOrder', generateScriptForSO());
+      injectToDb('fnARInvoice', generateScriptForSI());
     },
     OtherJScriptFn: (inputArg)=>{
       return `
@@ -15,7 +16,6 @@ get = ()=>{
       return `
         #language JScript
 
-        ${unitTest()}
         ${OtherJScriptFn('inputJs')}
 
         function createSql(trans){
@@ -62,16 +62,25 @@ get = ()=>{
             }
           }
         }
-
-        function doubleValue(a) {
-          return a * 2;
-        }
         
         Master.on_before_save_array = "showData"
         showMessage("Loop terakhir = " + inttostr(loopData() ) )
         showQueryData()
         runOtherJScriptFn("a", "b")
       ` 
+    },
+    generateScriptForSI: ()=>{
+      return `
+        #language JScript
+
+        ${unitTest()}     
+
+        function doubleValue(a) {
+          return a * 2;
+        }        
+
+        doubleValue(10)
+      `
     },
     unitTest: ()=>{
       return `
