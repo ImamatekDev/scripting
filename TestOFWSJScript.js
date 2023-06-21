@@ -72,7 +72,7 @@ get = ()=>{
     generateScriptForSI: ()=>{
       return `
         #language JScript
-        //.
+        
         ${unitTest()}     
 
         function doubleValue(a) {
@@ -84,7 +84,6 @@ get = ()=>{
     },
     unitTest: ()=>{
       return `
-      //.
         function dummytest() {
           const arg1 = 5 + 110;
 
