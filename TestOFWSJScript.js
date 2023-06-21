@@ -67,13 +67,29 @@ get = ()=>{
         showMessage("Loop terakhir = " + inttostr(loopData() ) )
         showQueryData()
         runOtherJScriptFn("a", "b")
-      ` 
+
+        ${unitTestSO()}
+      ` function dummytest() {
+          testData("SO NO", "SO0007", Master.SONO.AsString);
+        }
+        dummytest()
+      `
     },
+    unitTestSO: ()=>{
+      return `
+        function dummytest() {
+          const arg1 = 5 + 110;
+
+          testData("double value", "10", doubleValue(arg1));
+        }
+        dummytest()
+      `
+    },    
     generateScriptForSI: ()=>{
       return `
         #language JScript
         
-        ${unitTest()}     
+        ${unitTestSI()}     
 
         function doubleValue(a) {
           return a * 2;
@@ -82,7 +98,7 @@ get = ()=>{
         doubleValue(10)
       `
     },
-    unitTest: ()=>{
+    unitTestSI: ()=>{
       return `
         function dummytest() {
           const arg1 = 5 + 110;
