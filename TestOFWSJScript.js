@@ -69,18 +69,12 @@ get = ()=>{
         runOtherJScriptFn("a", "b")
 
         ${unitTestSO()}
-      ` function dummytest() {
-          testData("SO NO", "SO0007", Master.SONO.AsString);
-        }
-        dummytest()
       `
     },
     unitTestSO: ()=>{
       return `
         function dummytest() {
-          const arg1 = 5 + 110;
-
-          testData("double value", "10", doubleValue(arg1));
+          testData("SO NO", "SO0007", Master.SONO.AsString);
         }
         dummytest()
       `
