@@ -34,6 +34,12 @@
     "fileName": "BatchNoInjector.pas",
     "className": ""
   },
+  },
+  {
+    "name": "INCLUSIVE TAX",
+    "fileName": "InclusiveTaxInjector.pas",
+    "className": ""
+  },
   {
     "name": "ATTACHMENT",
     "fileName": "AttachmentInjector.pas",
