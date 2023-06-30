@@ -32,7 +32,7 @@
   {
     "name": "BATCH NUMBER",
     "fileName": "BatchNoInjector.pas",
-    "className": ""
+    "className": "TBatchNoInjector"
   },
   {
     "name": "INCLUSIVE TAX",
