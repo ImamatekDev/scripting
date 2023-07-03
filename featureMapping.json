@@ -9,7 +9,7 @@
   {"name": "nBATCH NUMBER", "fileName": "BatchNoInjector.pas", "className": "TBatchNoInjector"},
   {"name": "INCLUSIVE TAX", "fileName": "InclusiveTaxInjector.pas", "className": ""},
   {"name": "nRUNNING NUMBER", "fileName": "RunningNumberInjector.pas", "className": ""},
-  {"name": "nTAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
+  {"name": "TAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
   {"name": "nATTACHMENT", "fileName": "AttachmentInjector.pas", "className": ""},
   {"name": "nMFG WITH MPS", "fileName": "MfgWithMPSInjector.pas", "className": ""},
   {"name": "nEXCLUSIVE MULTI BRANCH", "fileName": "ExclusiveMultiBranchInjector.pas", "className": ""},
