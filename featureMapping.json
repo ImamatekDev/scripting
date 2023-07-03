@@ -10,29 +10,9 @@
   {"name": "INCLUSIVE TAX", "fileName": "InclusiveTaxInjector.pas", "className": ""},
   {"name": "RUNNING NUMBER", "fileName": "RunningNumberInjector.pas", "className": ""},
   {"name": "TAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
-
-
-
-
+  {"name": "ATTACHMENT", "fileName": "AttachmentInjector.pas", "className": ""},
   
-  {
-    "name": "ATTACHMENT",
-    "fileName": "AttachmentInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "TEST",
-    "fileName": "TestOFWSTahap2.pas",
-    "className": ""
-  },
-  {
-    "name": "TEST JSCRIPT",
-    "fileName": "TestOFWSJScript.js",
-    "className": ""
-  },
-  {
-    "name": "TESTING DWP",
-    "fileName": "TestDWP.js",
-    "className": ""
-  }
+  {"name": "TEST", "fileName": "TestOFWSTahap2.pas", "className": ""},
+  {"name": "TEST JSCRIPT", "fileName": "TestOFWSJScript.js","className": ""},
+  {"name": "TESTING DWP", "fileName": "TestDWP.js", "className": ""}
 ]
