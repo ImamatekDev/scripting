@@ -1,49 +1,15 @@
 [
-  {
-    "name": "INJECTOR",
-    "fileName": "Injector.pas",
-    "className": "TInjector"
-  },
-  {
-    "name": "SCRIPTCONST",
-    "fileName": "ScriptConst.pas",
-    "className": ""
-  },
-  {
-    "name": "DATASETBATCHNO",
-    "fileName": "DatasetBatchNoInjector.pas",
-    "className": "TDatasetBatchNoInjector"
-  },
-  {
-    "name": "RUNNING NO FP ",
-    "fileName": "RunningNoFPInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "REPORT MENU",
-    "fileName": "ReportMenuInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "UNIVERSALIMPORTER",
-    "fileName": "UniversalImporterInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "BATCH NUMBER",
-    "fileName": "BatchNoInjector.pas",
-    "className": "TBatchNoInjector"
-  },
-  {
-    "name": "INCLUSIVE TAX",
-    "fileName": "InclusiveTaxInjector.pas",
-    "className": ""
-  },
-  {
-    "name": "RUNNING NUMBER",
-    "fileName": "RunningNumberInjector.pas",
-    "className": ""
-  },
+  {"name": "INJECTOR", "fileName": "Injector.pas", "className": "TInjector"},
+  {"name": "SCRIPTCONST", "fileName": "ScriptConst.pas", "className": ""},
+  
+  {"name": "DATASETBATCHNO", "fileName": "DatasetBatchNoInjector.pas", "className": "TDatasetBatchNoInjector"},
+  {"name": "RUNNING NO FP ", "fileName": "RunningNoFPInjector.pas", "className": ""},
+  {"name": "REPORT MENU", "fileName": "ReportMenuInjector.pas", "className": ""},
+  {"name": "UNIVERSALIMPORTER", "fileName": "UniversalImporterInjector.pas", "className": ""},
+  {"name": "BATCH NUMBER", "fileName": "BatchNoInjector.pas", "className": "TBatchNoInjector"},
+  {"name": "INCLUSIVE TAX", "fileName": "InclusiveTaxInjector.pas", "className": ""},
+  {"name": "RUNNING NUMBER", "fileName": "RunningNumberInjector.pas", "className": ""},
+  {"name": "TAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
 
 
 
