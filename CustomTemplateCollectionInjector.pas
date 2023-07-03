@@ -1,4 +1,4 @@
-
+unit CustomTemplateCollectionInjector;
 
 interface
  uses Injector, BankConst;
