@@ -16,6 +16,13 @@
   {"name": "QUOTATION", "fileName": "QuotationInjector.pas", "className": ""},
   {"name": "SO OVERLIMIT APPROVAL", "fileName": "SOApprovalOverlimitInjector.pas", "className": ""},
   {"name": "DEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
+  {"name": "RUNNING NUMBER BY FORM", "fileName": "RunningNumberbyFormInjector.pas", "className": ""},
+  {"name": "VP MULTI DISCOUNT", "fileName": "VPMultiDiscInjector.pas", "className": ""},
+  {"name": "PRODUCTION RESULT BATCH NO", "fileName": "ProductionResultBatchNoInjector.pas", "className": ""},
+  {"name": "PRDISTROUNIT1", "fileName": "MCRPInjector.pas", "className": ""},
+  {"name": "CUSTOM TEMPLATE COLLECTION", "fileName": "CustomTemplateCollectionInjector.pas", "className": ""},
+  {"name": "RUNNING NO CASH/BANK", "fileName": "RunningNoCashBankInjector.pas", "className": ""},
+  {"name": "RUNNING NO CASH/BANK", "fileName": "RunningNoCashBankInjector.pas", "className": ""},
   
   {"name": "TEST", "fileName": "TestOFWSTahap2.pas", "className": ""},
   {"name": "TEST JSCRIPT", "fileName": "TestOFWSJScript.js","className": ""},
