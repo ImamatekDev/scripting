@@ -11,6 +11,11 @@
   {"name": "RUNNING NUMBER", "fileName": "RunningNumberInjector.pas", "className": ""},
   {"name": "TAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
   {"name": "ATTACHMENT", "fileName": "AttachmentInjector.pas", "className": ""},
+  {"name": "MFG WITH MPS", "fileName": "MfgWithMPSInjector.pas", "className": ""},
+  {"name": "EXCLUSIVE MULTI BRANCH", "fileName": "ExclusiveMultiBranchInjector.pas", "className": ""},
+  {"name": "QUOTATION", "fileName": "QuotationInjector.pas", "className": ""},
+  {"name": "SO OVERLIMIT APPROVAL", "fileName": "SOApprovalOverlimitInjector.pas", "className": ""},
+  {"name": "DEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
   
   {"name": "TEST", "fileName": "TestOFWSTahap2.pas", "className": ""},
   {"name": "TEST JSCRIPT", "fileName": "TestOFWSJScript.js","className": ""},
