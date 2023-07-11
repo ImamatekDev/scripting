@@ -48,7 +48,8 @@ begin
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
-  Script.Add := '  Result := ''SubProcedure'' + IntToStr(GetFirstVersion);';
+  Script.Add := '  Result := ''SubProcedure'' '+
+                             '+ IntToStr(GetFirstVersion);';
   Script.Add := 'end;';
 end;
 
