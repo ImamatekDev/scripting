@@ -48,8 +48,18 @@ begin
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
+  Script.Add := '  AddConcat := '' select first 1 soid '+
+                                'from '+
+                                'so'';';
+  Script.Add := '  AddConcat := AddConcat + ''; select companyno '
+                                + 'from '
+                                + 'company'';';
+  Script.Add := '  AddConcat := AddConcat + ''; select first 1 '' '
+                                + '+ ''* '' '
+                                + '+ ''from OPTIONS'';';
   Script.Add := '  Result := ''SubProcedure'' '+
-                             '+ IntToStr(GetFirstVersion);';
+                             '+ ''Concatination'' '+
+                             '+ IntToStr(GetFirstVersion) + AddConcat;';
   Script.Add := 'end;';
 end;
 
