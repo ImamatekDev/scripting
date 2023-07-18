@@ -50,7 +50,7 @@ begin
 
   Script.Add := EmptyStr;
   Script.Add := 'begin';
-  Script.Add := '  AddConcat := '' select first 1 soid '+
+  Script.Add := '  AddConcat := ''select first 1 soid '+
                                 'from '+
                                 'so'';';
   Script.Add := '  AddConcat := AddConcat + ''; select companyno '
