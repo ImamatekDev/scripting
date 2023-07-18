@@ -60,7 +60,7 @@ begin
                                 + '+ ''* '' '
                                 + '+ ''from OPTIONS'';';
   Script.Add := '  Result := ''SubProcedure'' '+
-                             '+ ''Concatination'' '+
+                             '+ ''Concatenation'' '+
                              '+ IntToStr(GetFirstVersion) + AddConcat;';
   Script.Add := 'end;';
 end;
