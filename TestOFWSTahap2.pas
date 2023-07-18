@@ -41,7 +41,7 @@ begin
   Script.Add := EmptyStr;
   Script.Add := 'function GetSubProcedure: string;';
   Script.Add := 'var';
-  Script.Add := '  AddConcat: string';
+  Script.Add := '  AddConcat: string;';
   Script.Add := EmptyStr;
   Script.Add := '  function GetFirstVersion: Integer;';
   Script.Add := '  begin';
