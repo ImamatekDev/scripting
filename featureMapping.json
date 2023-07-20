@@ -12,7 +12,7 @@
   {"name": "TAX REPORT MENU", "fileName": "TaxReportMenuInjector.pas", "className": ""},
   {"name": "ATTACHMENT", "fileName": "AttachmentInjector.pas", "className": ""},
   {"name": "MFG WITH MPS", "fileName": "MfgWithMPSInjector.pas", "className": ""},
-  {"name": "nEXCLUSIVE MULTI BRANCH", "fileName": "ExclusiveMultiBranchInjector.pas", "className": ""},
+  {"name": "EXCLUSIVE MULTI BRANCH", "fileName": "ExclusiveMultiBranchInjector.pas", "className": ""},
   {"name": "nQUOTATION", "fileName": "QuotationInjector.pas", "className": ""},
   {"name": "nSO OVERLIMIT APPROVAL", "fileName": "SOApprovalOverlimitInjector.pas", "className": ""},
   {"name": "nDEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
