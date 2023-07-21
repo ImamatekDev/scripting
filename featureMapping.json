@@ -17,7 +17,7 @@
   {"name": "SO OVERLIMIT APPROVAL", "fileName": "SOApprovalOverlimitInjector.pas", "className": ""},
   {"name": "DEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
   {"name": "RUNNING NUMBER BY FORM", "fileName": "RunningNumberbyFormInjector.pas", "className": ""},
-  {"name": "nVP MULTI DISCOUNT", "fileName": "VPMultiDiscInjector.pas", "className": ""},
+  {"name": "VP MULTI DISCOUNT", "fileName": "VPMultiDiscInjector.pas", "className": ""},
   {"name": "nPRODUCTION RESULT BATCH NO", "fileName": "ProductionResultBatchNoInjector.pas", "className": ""},
   {"name": "nPRDISTROUNIT1", "fileName": "MCRPInjector.pas", "className": ""},
   {"name": "nCUSTOM TEMPLATE COLLECTION", "fileName": "CustomTemplateCollectionInjector.pas", "className": ""},
