@@ -15,7 +15,7 @@
   {"name": "EXCLUSIVE MULTI BRANCH", "fileName": "ExclusiveMultiBranchInjector.pas", "className": ""},
   {"name": "QUOTATION", "fileName": "QuotationInjector.pas", "className": ""},
   {"name": "SO OVERLIMIT APPROVAL", "fileName": "SOApprovalOverlimitInjector.pas", "className": ""},
-  {"name": "nDEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
+  {"name": "DEPT MUST EXIST", "fileName": "DeptExistInjector.pas", "className": ""},
   {"name": "nRUNNING NUMBER BY FORM", "fileName": "RunningNumberbyFormInjector.pas", "className": ""},
   {"name": "nVP MULTI DISCOUNT", "fileName": "VPMultiDiscInjector.pas", "className": ""},
   {"name": "nPRODUCTION RESULT BATCH NO", "fileName": "ProductionResultBatchNoInjector.pas", "className": ""},
