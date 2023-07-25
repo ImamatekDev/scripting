@@ -15,7 +15,8 @@ type
   protected
     procedure set_scripting_parameterize; override;
     procedure GenerateVP; virtual;
-    procedure Variables(SetVP: Boolean=True); virtual;
+(*     procedure Variables(SetVP: Boolean=True); virtual; *)
+    procedure Variables(SetVP: Boolean); virtual;
     procedure VPMultiDiscountForm; virtual;
     procedure VPAddMultiDiscountForm; virtual;
     procedure MainCreateMenuSetting; virtual;
