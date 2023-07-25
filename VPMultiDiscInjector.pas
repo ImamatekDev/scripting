@@ -415,7 +415,8 @@ begin
   Script.Add := '';
 end;
 
-procedure TVPMultiDiscInjector.Variables(SetVP: Boolean=True);
+(* procedure TVPMultiDiscInjector.Variables(SetVP: Boolean=True); *)
+procedure TVPMultiDiscInjector.Variables(SetVP: Boolean);
 begin
   ReadOption;
   Script.Add := 'var ';
