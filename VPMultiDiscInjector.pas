@@ -518,7 +518,7 @@ begin
   add_procedure_runsql;
   AddFunction_CreateSQL;
 (*   Variables; *)
-  VPMultiDiscountForm;
+(*   VPMultiDiscountForm; *)
   WriteOption;
   Script.Add := 'var Discount : Variant; ';
   Script.Add := '    DiscAcc  : Variant; ';
