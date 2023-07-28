@@ -517,7 +517,7 @@ begin
   ClearScript;
   add_procedure_runsql;
   AddFunction_CreateSQL;
-(*   Variables;
+(*   Variables; *)
   VPMultiDiscountForm;
   WriteOption;
   Script.Add := 'var Discount : Variant; ';
@@ -574,7 +574,7 @@ begin
   Script.Add := '  Datamodule.AtblAPInvChq2.OnNewRecordArray  := @OnNewRecord; ';
   Script.Add := '  Datamodule.AtblAPInvChq2.OnBeforeEditArray := @OnBeforeEdit; ';
   Script.Add := '  Datamodule.AtblAPInvChq2.OnBeforePostArray := @CheckMultiDiscount; ';
-  Script.Add := 'end.'; *)
+  Script.Add := 'end.';
 end;
 
 procedure TVPMultiDiscInjector.MainCreateMenuSetting;
