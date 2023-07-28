@@ -37,9 +37,9 @@ end;
 
 procedure TVPMultiDiscInjector.VPAddMultiDiscountForm;
 begin
-  CreateLabel;
+(*   CreateLabel;
   CreateEditBox;
-  CreateComboBox;
+  CreateComboBox; *)
   Script.Add := 'Const TOKEN= '':''; ';
   Script.Add := 'procedure btnAddClick; ';
   Script.Add := 'var frmAdd : TForm; ';
@@ -144,7 +144,7 @@ begin
   Script.Add := '    SEG2POSITION : Byte; ';
   Script.Add := '    JVNUMLEN     : Byte; ';
   Script.Add := '';
-(*   VPAddMultiDiscountForm; *)
+  VPAddMultiDiscountForm;
   Script.Add := 'procedure CreateVCL;';
   Script.Add := 'begin';
   Script.Add := '  lv        := CreateListView(frm, 0, 0, frm.ClientWidth, frm.ClientHeight-40, true);';
