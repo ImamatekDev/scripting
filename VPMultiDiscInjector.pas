@@ -517,7 +517,7 @@ begin
   ClearScript;
   add_procedure_runsql;
   AddFunction_CreateSQL;
-(*   Variables; *)
+  Variables;
 (*   VPMultiDiscountForm; *)
   WriteOption;
   Script.Add := 'var Discount : Variant; ';
