@@ -144,7 +144,7 @@ begin
   Script.Add := '    SEG2POSITION : Byte; ';
   Script.Add := '    JVNUMLEN     : Byte; ';
   Script.Add := '';
-  VPAddMultiDiscountForm;
+(*   VPAddMultiDiscountForm; *)
   Script.Add := 'procedure CreateVCL;';
   Script.Add := 'begin';
   Script.Add := '  lv        := CreateListView(frm, 0, 0, frm.ClientWidth, frm.ClientHeight-40, true);';
@@ -518,7 +518,7 @@ begin
   add_procedure_runsql;
   AddFunction_CreateSQL;
   Variables;
-(*   VPMultiDiscountForm; *)
+  VPMultiDiscountForm;
   WriteOption;
   Script.Add := 'var Discount : Variant; ';
   Script.Add := '    DiscAcc  : Variant; ';
