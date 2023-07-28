@@ -39,7 +39,7 @@ procedure TVPMultiDiscInjector.VPAddMultiDiscountForm;
 begin
   CreateLabel;
   CreateEditBox;
-(*   CreateComboBox; *)
+  CreateComboBox;
   Script.Add := 'Const TOKEN= '':''; ';
   Script.Add := 'procedure btnAddClick; ';
   Script.Add := 'var frmAdd : TForm; ';
