@@ -1,6 +1,6 @@
 get = ()=>{
   return {
-    name: 'Test JScript',
+    name: 'TEST JSCRIPT',
     GenerateScript: ()=>{
       injectToDb('fnSalesOrder', generateScriptForSO());
       injectToDb('fnARInvoice', generateScriptForSI());
