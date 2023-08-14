@@ -1,6 +1,6 @@
 get = ()=>{
   return {
-    name: 'TESTING DWP',
+    name: 'Testing DWP',
     GenerateScript: ()=>{
       //add script in form, list / dataset into fina
       injectToDb('fnSalesOrders', generateScriptForListSO());
