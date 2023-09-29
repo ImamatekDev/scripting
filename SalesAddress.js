@@ -10,13 +10,7 @@ get = () => {
     generateScriptForSO: () => {
       return `
         #language JScript
-        
-        // ${unitTestSO()}
 
-        // DataModule.qryWareHS.Active = False;
-        // Insert(", DESCRIPTION ", DataModule.qryWareHS.SQL.Text, pos("from", DataModule.qryWareHS.SQL.Text) );
-        // DataModule.qryWareHS.AddJbField("DESCRIPTION","TIBStringField", 40);
-        // DataModule.qryWareHS.Active = True;
         Form.AcboCustomer.LookUpDisplay = ''NAME;ADDRESSLINE1;'';
       `
     },
