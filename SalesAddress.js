@@ -11,7 +11,7 @@ get = () => {
       return `
         #language JScript
 
-        Form.AcboCustomer.LookUpDisplay = ''NAME;ADDRESSLINE1;'';
+        Form.AcboCustomer.LookUpDisplay = "NAME;ADDRESSLINE1;";
       `
     },
     // unitTestSO: () => {
