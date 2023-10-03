@@ -4,7 +4,7 @@ get = () => {
     GenerateScript: () => {
       injectToDb('fnSalesOrder', generateScriptForSO());
       injectToDb('fnARRefund', generateScriptForSR());
-      // injectToDb('fnARPayment', generateScriptForCR());
+      injectToDb('fnARPayment', generateScriptForCR());
     },
 
     generateScriptForSO: () => {
@@ -30,6 +30,13 @@ get = () => {
           Form.AcboCustomer.LookUpDisplay = "NAME;ADDRESSLINE1;";
         }
         Form.AcboCustomer.OnEnter = "setDisplay";
+      `
+    },
+    generateScriptForCR: () => {
+      return `
+        #language JScript
+
+        Form.AcboBillTo.LookUpDisplay = "NAME;ADDRESSLINE1;";
       `
     },
   }
