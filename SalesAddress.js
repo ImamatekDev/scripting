@@ -3,7 +3,7 @@ get = () => {
     name: 'SALES ADDRESS',
     GenerateScript: () => {
       injectToDb('fnSalesOrder', generateScriptForSO());
-      // injectToDb('fnARRefund', generateScriptForSR());
+      injectToDb('fnARRefund', generateScriptForSR());
       // injectToDb('fnARPayment', generateScriptForCR());
     },
 
@@ -22,5 +22,13 @@ get = () => {
     //     test()
     //   `
     // }
+
+    generateScriptForSR: () => {
+      return `
+        #language JScript
+
+        Form.AcboCustomer.LookUpDisplay = "NAME;ADDRESSLINE1;";
+      `
+    },
   }
 }
