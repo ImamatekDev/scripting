@@ -26,8 +26,10 @@ get = () => {
     generateScriptForSR: () => {
       return `
         #language JScript
-
-        Form.AcboCustomer.LookUpDisplay = "NAME;ADDRESSLINE1;";
+        function setDisplay() {
+          Form.AcboCustomer.LookUpDisplay = "NAME;ADDRESSLINE1;";
+        }
+        Form.AcboCustomer.OnEnter = "setDisplay";
       `
     },
   }
