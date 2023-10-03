@@ -36,11 +36,10 @@ get = () => {
     generateScriptForCR: () => {
       return `
         #language JScript
-
-        function setDisplay() {
-          Form.AcboBillTo.LookUpDisplay = "NAME;ADDRESSLINE1;";
-        }
-        Form.AcboBillTo.OnEnter = "setDisplay";
+        
+        Form.AcboBillTo.DropDownWidth = Form.AcboBillTo.Width;
+        Form.AcboBillTo.LookUpDisplay = "NAME;ADDRESSLINE1;";
+        Form.AcboBillTo.LookupSource.DataSet.FieldByName("Name").DisplayWidth = 40;
       `
     },
   }
