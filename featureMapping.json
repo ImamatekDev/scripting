@@ -30,7 +30,7 @@
   {"name": "nRUNNING NO FP + PE", "fileName": "RunningNoFPPlusPEInjector.pas", "className": ""},
   {"name": "nAUTOMATIC LOCKING PERIOD", "fileName": "AutomaticLockingPeriodInjector.pas", "className": ""},
   
-  {"name": "SALES ADDRESS", "fileName": "SalesAddress.js", "className": ""},
+  {"name": "CVPMM SALES ADDRESS", "fileName": "CVPMMSalesAddress.js", "className": ""},
   
   {"name": "TEST", "fileName": "TestOFWSTahap2.pas", "className": ""},
   {"name": "TEST JSCRIPT", "fileName": "TestOFWSJScript.js","className": ""},
