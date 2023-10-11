@@ -1,6 +1,6 @@
 get = () => {
   return {
-    name: 'SALES ADDRESS',
+    name: 'CVPMM SALES ADDRESS',
     GenerateScript: () => {
       injectToDb('fnSalesOrder', generateScriptForSO());
       injectToDb('fnARRefund', generateScriptForSR());
